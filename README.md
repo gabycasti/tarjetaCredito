@@ -36,6 +36,7 @@
 
 ## 18) Si el resultado es diferente a 0 entonces la tarjeta no es válida
 
+![] (http://www.nedgrafica.cl/gabriela/tarjeta.png)
 
 
 
@@ -45,16 +46,3 @@
 
 
 
-### Es código javascript
-
-...javascript
-
-var str = "gaby"
-alert(str);
-'''
-
-
-
-![Diagrama de Flujo](diagrama.png) "Título de la imagen").
-# cifrado
-# tarjetaCredito
