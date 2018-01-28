@@ -1,20 +1,18 @@
 $(document).ready(function(){
 
 $("#enviar_tarjeta").click(function(){
-  ValidarTJ();
+  isValidCard()
 });
 
   });
 
-function ValidarTJ() {
+function isValidCard() {
  var tarjeta_num = $("#numero_tarjeta").val();
- alert('tarjeta_num');
  var cadena = tarjeta_num.toString();
- var longitud = cadena.length;
  var cifra = null;
  var cifra_cad=null;
  var suma=0;
- for (var i=0; i < longitud; i+=2){
+ for (var i=0; i < cadena.length; i+=2){
    cifra = parseInt(cadena.charAt(i))*2;
    if (cifra > 9){ 
      cifra_cad = cifra.toString();
@@ -23,14 +21,14 @@ parseInt(cifra_cad.charAt(1));
    }
    suma+=cifra;
  }
- for (var i=1; i < longitud; i+=2){
+ for (var i=1; i < cadena.length; i+=2){
    suma += parseInt(cadena.charAt(i));
  }
   
  if ((suma % 10) == 0){ 
-  alert("Número de tarjeta correcto");
+  $('#mensaje').append("<p>Número de tarjeta correcto</p>");
  } else {
-  alert("El número de tarjeta no es válido");
+  $('#mensaje').append("<p>Número de tarjeta incorrecto</p>");
  }
 }
 
@@ -46,10 +44,10 @@ parseInt(cifra_cad.charAt(1));
     for (var i = 0; i < tarjeta.length; i++) { 
       var item = tarjeta.pop(); // Elimino el ultimo elemento con pop y luego lo devuelvo
       tarjeta.splice (i, 0, item); // agrego los nuevos elementos con el splice especificando el indice que es i
-    }/* 
+    }/*
      * Los elementos a borrar en este caso es 0 y el elemento a agregar en el array en este caso item
      * Determino que ubicacion del arreglo es par
-     */
+    */
     /*for (var i = 0; i < tarjeta.length; i++) {// recorro la palabra con un length
       if (i % 2 === 1) { // Determina si la posición que me da i es par
         var validar = parseInt(tarjeta[i]) * 2;// convierto el strin a número

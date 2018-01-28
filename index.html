@@ -2,12 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"> 
+  <link rel = "stylesheet" href = "https://cdn.rawgit.com/arafkarim/BootstrapPlusPlus/2d8d0b9d/bpp/bpp.min.css">
 	<title>Tarjeta de Credito</title>
 </head>
 <body>
-	<h1>Tarjeta</h1>
-	<script type="text/javascript" src="tarjeta.js"></script>
+   
+   <div id="twits">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-pull-3 col-lg-6 col-lg-push-3 ">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Introduzca su Tarjeta de Credito</h4>
+            <div class="form-group">
+              <input id="numero_tarjeta" class="form-control" rows="3" type="text">
+            </div>
+            <a href="#" id="enviar_tarjeta" class="btn btn-primary">Validar Tarjeta</a>
+            <div id="mensaje"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/tarjeta.js"></script>
 </body>
-
-
 </html>
