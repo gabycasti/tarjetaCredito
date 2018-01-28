@@ -19,12 +19,12 @@ $("#numero_tarjeta").keydown(function(){
 
 function isValidCard() {
  var tarjeta_num = $("#numero_tarjeta").val();
- var cadena = tarjeta_num.toString();
+ var tarjeta = tarjeta_num.toString();
  var cifra = null;
  var cifra_cad=null;
  var suma=0;
- for (var i=0; i < cadena.length; i+=2){
-   cifra = parseInt(cadena.charAt(i))*2;
+ for (var i=0; i < tarjeta.length; i+=2){
+   cifra = parseInt(tarjeta.charAt(i))*2;
    if (cifra > 9){ 
      cifra_cad = cifra.toString();
      cifra = parseInt(cifra_cad.charAt(0)) + 
@@ -32,8 +32,8 @@ parseInt(cifra_cad.charAt(1));
    }
    suma+=cifra;
  }
- for (var i=1; i < cadena.length; i+=2){
-   suma += parseInt(cadena.charAt(i));
+ for (var i=1; i < tarjeta.length; i+=2){
+   suma += parseInt(tarjeta.charAt(i));
  }
   
  if ((suma % 10) == 0){ 

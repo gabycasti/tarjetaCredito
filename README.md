@@ -1,42 +1,29 @@
-# Validar Tarjeta
 
-<h1>Este es un título</h1>
+<h1>Validación de Tarjeta</h1>
 
-## 1) Declarar Función para Validar Tarjeta 
+<h5>Validar Campo de Número de Tarjeta</h5>
 
-## 2) Preguntar al usuario por el número de tarjeta
+<ol>
+    <li>Validar que no sea un campo vacio, preguntando si el campo es igual a vacio </li>
+    <li>Validar que sean introducidos solo números, preguntando si el dato es de tipo númerico</li>
+</ol>
 
-## 3) Validar que la información no este vacia
+<h5>Inicializar los mensajes</h5>
 
-## 4) Convertir la información que es una cadena en un arreglo
+<ol>
+    <li>Reinicilar los mensajes de advertencia validandolos cada vez que el usuario pulse una tecla</li>
+</ol>
 
-## 5) Invertir el arreglo de atras hacia adelante ya según el  algoritmo de Luhn 
+<h5>Función que Valida si el Númeo de Tarjeta es correto</h5>
+<ol>
+    <li>Asignar a la variable tarjeta_num el valor del input donde se introdujo el número de tarjeta </li>
+    <li>Convertir el valor en una cadena para luego recorrerla</li>
+    <li>Inicializar tres variables </li>
+</ol>
 
-## 6) Recorrer el arreglo para ubicar la posición de cada uno de los digitos
 
-## 7) Ubicar las posiciones del arreglo que son par
 
-## 8) Una vez que se tienen las posiciones par, multiplicar cada una por 2
 
-## 9) Determinar si el resultado de esa multiplicación es mayor o igual a 10
-
-## 10) De ser mayor o igual a 10 convertir el resultado en cadena y luego guardarlo en un arreglo
-
-## 11) Convertir el resultado en numero y sumarlos
-
-## 12) Reemplazar el número anterior por el resultado en la misma posición
-
-## 13) Inicializar la variable que obtendra la siguiente operación en 0
-
-## 14) Recorrer el arreglo 
-
-## 15) Convertir el arreglo en numeros y luego sumar todos
-
-## 16) Reemplazar el número anterior por el resultado en la misma posición
-
-## 17) Obtener el residuo de 10 sobre el valor total, de ser el resultado igual a 0 entonces la tarjeta es válida
-
-## 18) Si el resultado es diferente a 0 entonces la tarjeta no es válida
 
 ![] (http://www.nedgrafica.cl/gabriela/tarjeta.png)
 
