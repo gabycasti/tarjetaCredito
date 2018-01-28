@@ -19,13 +19,15 @@
     <li>Asignar a la variable tarjeta_num el valor del input donde se introdujo el número de tarjeta </li>
     <li>Convertir el valor en una cadena para luego recorrerla</li>
     <li>Inicializar tres variables </li>
+    <li>recorerr el string tarjeta de dos en dos </li>
+    <li>ubicamos los números que ocupan una posición impar en el número de la tarjeta </li>
+    <li>A estos números se le multiplica por dos. Si el número resultante es menor que nueve, se deja tal cual</li>
+    <li>En caso contrario, se le resta nueve</li>
+    <li>Se suman  todas las cifras del nuevo número obtenido.</li>
+    <li>Si el número resultante es múltiplo de 10 es una tarjeta válida</li>
 </ol>
 
 
-
-
-
-![] (http://www.nedgrafica.cl/gabriela/tarjeta.png)
 
 
 
