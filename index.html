@@ -4,19 +4,29 @@
 	<meta charset="UTF-8">
   <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"> 
   <link rel = "stylesheet" href = "https://cdn.rawgit.com/arafkarim/BootstrapPlusPlus/2d8d0b9d/bpp/bpp.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
 	<title>Tarjeta de Credito</title>
 </head>
 <body>
    
-   <div id="twits">
-  <div class="container-fluid">
+<div id="validar_tarjeta">
+  <div class="container">
     <div class="row">
       <div class="col-lg-pull-3 col-lg-6 col-lg-push-3 ">
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">Introduzca su Tarjeta de Credito</h4>
-            <div class="form-group">
+            <div class="row">
+              <div class="col-lg-6 ">
+                <div class="form-group">
               <input id="numero_tarjeta" class="form-control" rows="3" type="text">
+              </div>
+            </div>
+               <div class="col-lg-6 ">
+                <div class="form-group">
+              <div id="mensaje_vacio"></div>
+              </div>
+            </div>
             </div>
             <a href="#" id="enviar_tarjeta" class="btn btn-primary">Validar Tarjeta</a>
             <div id="mensaje"></div>

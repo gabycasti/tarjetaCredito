@@ -1,0 +1,12 @@
+*, ::after, ::before{
+    justify-content: center;
+
+}
+
+#mensaje_vacio{
+    color:red;
+}
+
+#mensaje{
+    color:red;
+}
