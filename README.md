@@ -11,7 +11,7 @@
 <h5>Inicializar los mensajes</h5>
 
 <ol>
-    <li>Reinicilar los mensajes de advertencia validandolos cada vez que el usuario pulse una tecla</li>
+    <li>Reiniciar los mensajes de advertencia validandolos cada vez que el usuario pulse una tecla</li>
 </ol>
 
 <h5>Función que Valida si el Númeo de Tarjeta es correto</h5>

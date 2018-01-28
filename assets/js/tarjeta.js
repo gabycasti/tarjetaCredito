@@ -20,17 +20,17 @@ $("#numero_tarjeta").keydown(function(){
 function isValidCard() {
  var tarjeta_num = $("#numero_tarjeta").val();
  var tarjeta = tarjeta_num.toString();
- var cifra = null;
+ var codigo_tar = null;
  var cifra_cad=null;
  var suma=0;
  for (var i=0; i < tarjeta.length; i+=2){
-   cifra = parseInt(tarjeta.charAt(i))*2;
-   if (cifra > 9){ 
-     cifra_cad = cifra.toString();
-     cifra = parseInt(cifra_cad.charAt(0)) + 
+   codigo_tar = parseInt(tarjeta.charAt(i))*2;
+   if (codigo_tar > 9){ 
+     cifra_cad = codigo_tar.toString();
+     codigo_tar = parseInt(cifra_cad.charAt(0)) + 
 parseInt(cifra_cad.charAt(1));
    }
-   suma+=cifra;
+   suma+=codigo_tar;
  }
  for (var i=1; i < tarjeta.length; i+=2){
    suma += parseInt(tarjeta.charAt(i));
