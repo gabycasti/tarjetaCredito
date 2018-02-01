@@ -27,6 +27,8 @@
     <li>Si el número resultante es múltiplo de 10 es una tarjeta válida</li>
 </ol>
 
+![alt text](http://www.grupojega.cl/images/hover.gif)
+
 
 
 
