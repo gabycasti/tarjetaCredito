@@ -1,3 +1,16 @@
+body{
+    max-width: 100%;
+    background-size: cover;
+    height: auto;
+    background-image: url("../img/tarjeta_de_credito.jpg");
+    background-repeat: no-repeat;
+}
+
+
+.card{
+    margin-top: 20px;
+}
+
 *, ::after, ::before{
     justify-content: center;
 
