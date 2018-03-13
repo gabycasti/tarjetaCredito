@@ -16,7 +16,7 @@ body{
 
 }
 
-#mensaje_vacio{
+#mensaje_vacio,#mensaje_nombre{
     color:red;
 }
 

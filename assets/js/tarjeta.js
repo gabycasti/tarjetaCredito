@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $('#enviar_tarjeta').click(function() {
-    if ($('#numero_tarjeta').val() === '') {
+    if($('#nombre').val() === ''){
+      $('#mensaje_nombre').html('<p>Introduzca Nombre</p>');
+    } else if ($('#numero_tarjeta').val() === '') {
       $('#mensaje_vacio').html('<p>Introduzca un Número de tarjeta</p>');
     } else if (isNaN($('#numero_tarjeta').val())) {
       $('#mensaje_vacio').html('<p>Introduzca solo Números</p>');
@@ -9,11 +11,60 @@ $(document).ready(function() {
     }
   });
 
+
+
+$('#nombre').keypress(function(){
+  if (!($('#nombre').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiou'))){
+    $('#mensaje_nombre').html('<p>Introduzca Válido</p>');
+  }
+});
+
+
+
+$('#nombre').keydown(function() {
+    $('#mensaje_nombre').text('');
+   
+  });
+
+
   $('#numero_tarjeta').keydown(function() {
+    $('#mensaje_nombre').text('');
     $('#mensaje_vacio').text('');
     $('#mensaje').text('');
   });
+
+  newMes();
+  newYear();
+
 });
+
+
+
+
+//Select dinámico agrega los meses
+function newMes(){
+var combo = document.getElementById("mes");  //TU COMBO DE AÑOS
+for(var i = 1; i <= 12; i++) {   //RECORRIDO DE AÑOS
+    var opcionNueva = document.createElement('option');  //INSTANCIA A LA NUEVA OPCION
+    opcionNueva.innerHTML = i;  //AGREGAR LO QUE VE EL CLIENTE EN EL COMBO
+    opcionNueva.value = i;  //AGREGAR EL VALOR REAL A CADA OPCION
+    combo.appendChild(opcionNueva); //AQUI SE AGREGA LA NUEVA OPCION AL COMBO
+  }
+};
+
+
+//Select dinámico agrega los Años
+function newYear(){
+ var combo = document.getElementById("year");  //TU COMBO DE AÑOS
+for(var i = 2018; i < 2030; i++) {   //RECORRIDO DE AÑOS
+    var opcionNueva = document.createElement('option');  //INSTANCIA A LA NUEVA OPCION
+    opcionNueva.innerHTML = i;  //AGREGAR LO QUE VE EL CLIENTE EN EL COMBO
+    opcionNueva.value = i;  //AGREGAR EL VALOR REAL A CADA OPCION
+    combo.appendChild(opcionNueva); //AQUI SE AGREGA LA NUEVA OPCION AL COMBO
+  }
+};
+
+
 
 function isValidCard() {
   var tarjetaNum = $('#numero_tarjeta').val();//Obtener el valor del input
