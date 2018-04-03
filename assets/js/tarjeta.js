@@ -11,6 +11,9 @@ $(document).ready(function() {
     }
   });
 
+$("#portafolio").click(function(){
+  document.location.replace("https://gabycasti.github.io/portafolio/");
+})
 
 
 $('#nombre').keypress(function(){
