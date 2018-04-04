@@ -18,7 +18,7 @@ $("#portafolio").click(function(){
 
 $('#nombre').keypress(function(){
   if (!($('#nombre').validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiou'))){
-    $('#mensaje_nombre').html('<p>Introduzca Válido</p>');
+    $('#mensaje_nombre').html('<p>Introduzca Nombre Válido</p>');
   }
 });
 
